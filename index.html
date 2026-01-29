@@ -4,450 +4,329 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Fenil Surani | IT Support Portfolio</title>
-  <meta name="description" content="Entry-level Help Desk / IT Support in Toronto (GTA). Active Directory, GPO, Windows Server, Spiceworks Ticketing. CompTIA A+." />
+  <meta name="description" content="Entry-level Help Desk / IT Support portfolio. Active Directory, GPO, Windows Server, Spiceworks ticketing, troubleshooting, documentation." />
 
-  <!-- Social preview (optional) -->
   <meta property="og:title" content="Fenil Surani | IT Support Portfolio" />
-  <meta property="og:description" content="Entry-level Help Desk / IT Support. Labs: Active Directory + GPO, Spiceworks ticketing. CompTIA A+." />
-  <!-- If you add an image later, put it at assets/img/og.png and uncomment:
+  <meta property="og:description" content="Help Desk / IT Support • AD/GPO • Windows Server • Ticketing (Spiceworks) • Toronto (GTA)" />
+  <!-- Optional social preview image:
   <meta property="og:image" content="https://fenilsurani7478.github.io/assets/img/og.png" />
   -->
 
-  <style>
-    :root{
-      --bg:#ffffff;
-      --text:#0f172a;
-      --muted:#475569;
-      --line:#e5e7eb;
-      --card:#ffffff;
-      --shadow: 0 10px 25px rgba(15,23,42,.06);
-      --radius:16px;
-      --accent:#0f172a;
-      --accent2:#2563eb;
-      --pill:#f1f5f9;
-      --max: 1040px;
-    }
-    *{box-sizing:border-box}
-    html{scroll-behavior:smooth}
-    body{
-      margin:0;
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      color:var(--text);
-      background:var(--bg);
-      line-height:1.55;
-    }
-    a{color:var(--accent2); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:var(--max); margin:0 auto; padding:0 20px}
-    .topbar{
-      position:sticky; top:0; z-index:50;
-      background:rgba(255,255,255,.88);
-      backdrop-filter:saturate(180%) blur(10px);
-      border-bottom:1px solid var(--line);
-    }
-    .nav{
-      display:flex; align-items:center; justify-content:space-between;
-      height:64px;
-    }
-    .brand{
-      display:flex; align-items:center; gap:10px;
-      font-weight:700; letter-spacing:.2px;
-      color:var(--text);
-    }
-    .dot{width:10px; height:10px; border-radius:50%; background:var(--accent2)}
-    .navlinks{display:flex; gap:18px; align-items:center}
-    .navlinks a{
-      color:var(--muted);
-      font-weight:600;
-      font-size:14px;
-      padding:8px 10px;
-      border-radius:10px;
-    }
-    .navlinks a:hover{background:var(--pill); text-decoration:none; color:var(--text)}
-    .btn{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 14px;
-      border-radius:12px;
-      border:1px solid var(--line);
-      background:#fff;
-      color:var(--text);
-      font-weight:700;
-      box-shadow:0 1px 0 rgba(15,23,42,.04);
-    }
-    .btn:hover{background:#f8fafc; text-decoration:none}
-    .hero{
-      padding:52px 0 26px;
-    }
-    .heroGrid{
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:26px;
-      align-items:start;
-    }
-    h1{margin:0 0 6px; font-size:44px; line-height:1.08}
-    .sub{
-      color:var(--muted);
-      font-size:16px;
-      margin:0 0 14px;
-      font-weight:600;
-    }
-    .lead{
-      color:var(--text);
-      font-size:16px;
-      margin:0 0 18px;
-      max-width:62ch;
-    }
-    .pills{display:flex; flex-wrap:wrap; gap:10px}
-    .pill{
-      background:var(--pill);
-      border:1px solid #e2e8f0;
-      padding:8px 12px;
-      border-radius:999px;
-      font-size:13px;
-      font-weight:700;
-      color:#0f172a;
-    }
-    .card{
-      background:var(--card);
-      border:1px solid var(--line);
-      border-radius:var(--radius);
-      box-shadow:var(--shadow);
-      padding:18px;
-    }
-    .profileCard{
-      display:flex; gap:14px; align-items:center;
-    }
-    .avatar{
-      width:76px; height:76px; border-radius:18px;
-      object-fit:cover;
-      border:1px solid var(--line);
-      background:#f1f5f9;
-    }
-    .small{color:var(--muted); font-size:13px; margin:2px 0 0}
-    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:14px}
-    .btnPrimary{
-      border-color:#1d4ed8;
-      background:#2563eb;
-      color:#fff;
-    }
-    .btnPrimary:hover{background:#1d4ed8}
-    section{padding:34px 0}
-    .sectionTitle{
-      display:flex; align-items:end; justify-content:space-between; gap:12px;
-      margin-bottom:14px;
-    }
-    .sectionTitle h2{margin:0; font-size:22px}
-    .sectionTitle p{margin:0; color:var(--muted); font-size:14px}
-    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px}
-    .proj{
-      display:grid;
-      grid-template-columns: 140px 1fr;
-      gap:14px;
-      align-items:stretch;
-    }
-    .thumb{
-      width:140px; height:110px;
-      border-radius:14px;
-      border:1px solid var(--line);
-      object-fit:cover;
-      background:#f1f5f9;
-    }
-    .proj h3{margin:0 0 6px; font-size:16px}
-    .proj ul{margin:8px 0 0; padding-left:18px; color:var(--text)}
-    .proj li{margin:4px 0}
-    .metaRow{
-      display:flex; gap:10px; flex-wrap:wrap;
-      margin-top:10px;
-    }
-    .tag{
-      font-size:12px; font-weight:800;
-      padding:6px 10px;
-      border-radius:999px;
-      border:1px solid var(--line);
-      background:#fff;
-      color:var(--muted);
-    }
-    .list{
-      margin:0; padding-left:18px; color:var(--text);
-    }
-    .kvs{display:grid; gap:10px}
-    .kv{display:flex; justify-content:space-between; gap:12px}
-    .kv strong{font-size:14px}
-    .kv span{color:var(--muted); font-size:14px; text-align:right}
-    footer{
-      border-top:1px solid var(--line);
-      padding:22px 0;
-      color:var(--muted);
-      font-size:13px;
-    }
-    @media (max-width: 880px){
-      .heroGrid{grid-template-columns:1fr; }
-      h1{font-size:36px}
-      .grid2{grid-template-columns:1fr}
-      .proj{grid-template-columns:1fr; }
-      .thumb{width:100%; height:170px}
-      .navlinks{display:none}
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
-  <!-- Header (like your example) -->
-  <div class="topbar">
-    <div class="wrap">
-      <div class="nav">
-        <a class="brand" href="#home" aria-label="Home">
-          <span class="dot"></span>
-          <span>Fenil Surani</span>
-        </a>
+  <div class="bg-glow" aria-hidden="true"></div>
 
-        <div class="navlinks" aria-label="Primary navigation">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#education">Education</a>
-          <a href="#certs">Certs</a>
-          <a href="#contact">Contact</a>
-        </div>
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#home" aria-label="Go to Home">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Fenil Surani</span>
+      </a>
 
-        <a class="btn" href="#contact">Contact</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certs">Certs</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <a class="btn btn--ghost" href="#contact">Contact</a>
+        <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
-  </div>
 
-  <!-- Home -->
-  <main id="home" class="hero">
-    <div class="wrap">
-      <div class="heroGrid">
-        <div>
-          <h1>Entry-Level Help Desk / IT Support</h1>
-          <p class="sub">Toronto (GTA) • CompTIA A+ • Active Directory • GPO • Windows Server • Spiceworks</p>
-          <p class="lead">
-            Recent graduate pursuing entry-level Help Desk / IT Support roles. Hands-on labs focused on
-            Active Directory, Group Policy, Windows Server, and ticketing workflows. Strong communication,
-            structured troubleshooting, and documentation.
-          </p>
-
-          <div class="pills" aria-label="Key skills">
-            <span class="pill">Help Desk</span>
-            <span class="pill">Troubleshooting</span>
-            <span class="pill">Active Directory</span>
-            <span class="pill">GPO</span>
-            <span class="pill">Windows Server</span>
-            <span class="pill">Ticketing (Spiceworks)</span>
-          </div>
-
-          <div class="ctaRow">
-            <a class="btn btnPrimary" href="#projects">View Projects</a>
-            <a class="btn" href="https://www.linkedin.com/in/fenilsurani/" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a class="btn" href="mailto:fenil.surani.it@gmail.com">Email</a>
-          </div>
-        </div>
-
-        <!-- Profile card -->
-        <div class="card profileCard">
-          <!-- PROFILE PHOTO LOCATION -->
-          <!-- Put your photo here: assets/img/profile.jpg -->
-          <img class="avatar" src="assets/img/profile.jpg" alt="Fenil Surani profile photo" />
-
-          <div>
-            <div style="font-weight:800;">Fenil Surani</div>
-            <div class="small">Help Desk / IT Support (Entry-Level)</div>
-            <div class="small">Scarborough / Toronto, Ontario</div>
-            <div class="small" style="margin-top:8px;">
-              <strong>Focus:</strong> AD + GPO, ticket lifecycle, documentation
-            </div>
-          </div>
-        </div>
-
+    <!-- Mobile nav -->
+    <div class="mobileNav" id="mobileNav">
+      <div class="container mobileNav__inner">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#certs">Certs</a>
+        <a href="#contact">Contact</a>
       </div>
     </div>
-  </main>
+  </header>
 
-  <!-- About -->
-  <section id="about">
-    <div class="wrap">
-      <div class="sectionTitle">
-        <h2>About</h2>
-        <p>What I do and how I work</p>
-      </div>
-
-      <div class="card">
-        <p style="margin:0 0 10px;">
-          I enjoy solving end-user issues, documenting clear fixes, and keeping systems running smoothly.
-          I’m building real-world readiness through hands-on labs that mirror Help Desk / junior sysadmin workflows:
-          account setup, policy application, ticket prioritization, and repeatable troubleshooting.
+  <!-- Hero -->
+  <main class="container">
+    <section class="hero" id="home">
+      <div class="hero__left">
+        <div class="chip">CompTIA A+ • Toronto (GTA)</div>
+        <h1 class="hero__title">Entry-Level Help Desk / IT Support</h1>
+        <p class="hero__subtitle">
+          Hands-on home labs in <strong>Active Directory</strong>, <strong>GPO</strong>, <strong>Windows Server</strong>, and
+          <strong>ticketing workflows</strong>. Strong troubleshooting + documentation.
         </p>
-        <ul class="list">
-          <li>Structured troubleshooting (gather → isolate → fix → verify)</li>
-          <li>Clear documentation (KB notes, repeat-issue playbooks)</li>
-          <li>Customer communication (calm, clear, outcome-focused)</li>
-        </ul>
-      </div>
-    </div>
-  </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <div class="wrap">
-      <div class="sectionTitle">
+        <div class="pillRow" aria-label="Key skills">
+          <span class="pill">Help Desk</span>
+          <span class="pill">Troubleshooting</span>
+          <span class="pill">Active Directory</span>
+          <span class="pill">GPO</span>
+          <span class="pill">Windows Server</span>
+          <span class="pill">Ticketing (Spiceworks)</span>
+        </div>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/fenilsurani/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn--ghost" href="mailto:fenil.surani.it@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <aside class="hero__card card reveal">
+        <div class="profile">
+          <img class="avatar" src="assets/img/profile.jpg" alt="Fenil Surani profile photo" />
+          <div>
+            <div class="profile__name">Fenil Surani</div>
+            <div class="profile__meta">Help Desk / IT Support (Entry-Level)</div>
+            <div class="profile__meta">Scarborough • Toronto (GTA)</div>
+          </div>
+        </div>
+
+        <div class="mini">
+          <div class="mini__row">
+            <span class="mini__label">Focus</span>
+            <span class="mini__value">AD + GPO • Ticket lifecycle • KB docs</span>
+          </div>
+          <div class="mini__row">
+            <span class="mini__label">Strengths</span>
+            <span class="mini__value">Customer support • Clear notes • Calm triage</span>
+          </div>
+        </div>
+
+        <div class="quickLinks">
+          <a class="quickLinks__item" href="https://github.com/FenilSurani7478" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="quickLinks__item" href="#certs">Certs</a>
+          <a class="quickLinks__item" href="#contact">Contact</a>
+        </div>
+      </aside>
+    </section>
+
+    <!-- About -->
+    <section class="section reveal" id="about">
+      <div class="section__head">
+        <h2>About</h2>
+        <p>How I work on support issues</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3 class="card__title">Support mindset</h3>
+          <p class="muted">
+            I enjoy helping end-users get back to work quickly. I follow a structured approach:
+            gather context → isolate the cause → implement a fix → verify → document.
+          </p>
+          <ul class="list">
+            <li>Clear communication and expectations</li>
+            <li>Strong ticket notes + repeatable KB articles</li>
+            <li>Prioritization based on impact and urgency</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3 class="card__title">What I’m targeting</h3>
+          <p class="muted">
+            Entry-level Help Desk / IT Support roles (on-site/hybrid in Toronto/GTA). Ready to contribute
+            immediately and grow into Tier 2 / junior sysadmin responsibilities.
+          </p>
+          <div class="tags">
+            <span class="tag">Windows support</span>
+            <span class="tag">AD user/OUs</span>
+            <span class="tag">GPO basics</span>
+            <span class="tag">Ticketing</span>
+            <span class="tag">Documentation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section reveal" id="projects">
+      <div class="section__head">
         <h2>Projects</h2>
-        <p>Hands-on labs with GitHub documentation</p>
+        <p>Featured labs with GitHub documentation</p>
       </div>
 
-      <div class="grid2">
-        <!-- Project 1 -->
-        <div class="card proj">
-          <!-- THUMBNAIL LOCATION -->
-          <!-- Put your image here: assets/img/thumb-spiceworks.png -->
-          <img class="thumb" src="assets/img/thumb-spiceworks.png" alt="Spiceworks Help Desk Lab thumbnail" />
-
-          <div>
-            <h3>Spiceworks Help Desk Lab (Ticketing, SLAs, Alerts + KB Workflow)</h3>
-            <div class="metaRow">
-              <span class="tag">Ticket Lifecycle</span>
-              <span class="tag">SLAs</span>
-              <span class="tag">Email Alerts</span>
-              <span class="tag">KB Articles</span>
+      <div class="projectGrid">
+        <!-- Spiceworks -->
+        <article class="card project">
+          <img class="project__thumb" src="assets/img/thumb-spiceworks.png" alt="Spiceworks Help Desk Lab thumbnail" />
+          <div class="project__body">
+            <div class="project__top">
+              <h3>Spiceworks Help Desk Lab</h3>
+              <span class="badge">Ticketing • SLA • KB</span>
             </div>
-            <ul>
-              <li>Configured users/roles, ticket categories, SLAs, and email alerts</li>
-              <li>Practiced ticket lifecycle: intake → triage → resolution → closure</li>
-              <li>Wrote KB articles for repeat issues to improve consistency</li>
+
+            <ul class="list tight">
+              <li>Configured users/roles, categories, SLAs, email alerts</li>
+              <li>Practiced intake → triage → resolution → closure</li>
+              <li>Created KB articles for repeat fixes</li>
             </ul>
-            <div class="ctaRow" style="margin-top:12px;">
-              <a class="btn" href="https://github.com/FenilSurani7478/spiceworks-helpdesk-lab" target="_blank" rel="noreferrer">View on GitHub</a>
+
+            <div class="tags">
+              <span class="tag">Incident workflow</span>
+              <span class="tag">Ticket notes</span>
+              <span class="tag">Documentation</span>
+            </div>
+
+            <div class="project__actions">
+              <a class="btn btn--primary" href="https://github.com/FenilSurani7478/spiceworks-helpdesk-lab" target="_blank" rel="noreferrer">View GitHub</a>
+              <button class="btn btn--ghost caseBtn" data-case="case-spiceworks">Case Study</button>
+            </div>
+
+            <div class="case" id="case-spiceworks" hidden>
+              <div class="case__grid">
+                <div><h4>Goal</h4><p>Practice real service desk workflows and SLA-based prioritization.</p></div>
+                <div><h4>What I built</h4><p>Configured categories, SLAs, alerts, users/roles; ran sample incidents end-to-end.</p></div>
+                <div><h4>What I learned</h4><p>Clear ticket notes, triage decisions, and KB documentation reduce repeat issues.</p></div>
+              </div>
             </div>
           </div>
-        </div>
+        </article>
 
-        <!-- Project 2 -->
-        <div class="card proj">
-          <!-- THUMBNAIL LOCATION -->
-          <!-- Put your image here: assets/img/thumb-ad-homelab.png -->
-          <img class="thumb" src="assets/img/thumb-ad-homelab.png" alt="Active Directory Home Lab thumbnail" />
-
-          <div>
-            <h3>Active Directory Home Lab (GPO Logon Script + Centralized Logging)</h3>
-            <div class="metaRow">
-              <span class="tag">Windows Server</span>
-              <span class="tag">Active Directory</span>
-              <span class="tag">GPO</span>
-              <span class="tag">Logging</span>
+        <!-- AD Lab -->
+        <article class="card project">
+          <img class="project__thumb" src="assets/img/thumb-ad-homelab.png" alt="Active Directory Home Lab thumbnail" />
+          <div class="project__body">
+            <div class="project__top">
+              <h3>Active Directory Home Lab</h3>
+              <span class="badge">AD • GPO • Windows Server</span>
             </div>
-            <ul>
-              <li>Built AD lab (Windows Server DC + Windows 11 client in VMware)</li>
+
+            <ul class="list tight">
+              <li>Built Windows Server DC + Windows 11 client (VMware)</li>
               <li>Created users/OUs and applied Group Policy (GPO)</li>
-              <li>Deployed logon script + centralized logging for troubleshooting</li>
+              <li>Deployed logon script + centralized logging</li>
             </ul>
-            <div class="ctaRow" style="margin-top:12px;">
-              <a class="btn" href="https://github.com/FenilSurani7478/ad-homelab-gpo-logon-script" target="_blank" rel="noreferrer">View on GitHub</a>
+
+            <div class="tags">
+              <span class="tag">AD DS</span>
+              <span class="tag">GPO</span>
+              <span class="tag">Troubleshooting</span>
+            </div>
+
+            <div class="project__actions">
+              <a class="btn btn--primary" href="https://github.com/FenilSurani7478/ad-homelab-gpo-logon-script" target="_blank" rel="noreferrer">View GitHub</a>
+              <button class="btn btn--ghost caseBtn" data-case="case-ad">Case Study</button>
+            </div>
+
+            <div class="case" id="case-ad" hidden>
+              <div class="case__grid">
+                <div><h4>Goal</h4><p>Build realistic AD/GPO practice for account and policy troubleshooting.</p></div>
+                <div><h4>What I built</h4><p>OUs/users + GPO settings; logon script; centralized logging for validation.</p></div>
+                <div><h4>What I learned</h4><p>Policy application testing (gpupdate), repeatable setup, and clear documentation.</p></div>
+              </div>
             </div>
           </div>
-        </div>
+        </article>
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <div class="wrap">
-      <div class="sectionTitle">
+    <!-- Education -->
+    <section class="section reveal" id="education">
+      <div class="section__head">
         <h2>Education</h2>
-        <p>Programs and relevant focus areas</p>
+        <p>Programs and focus areas</p>
       </div>
 
       <div class="grid2">
-        <div class="card kvs">
-          <div class="kv">
-            <strong>Loyalist College</strong>
-            <span>Postgraduate Degree — Wireless Information Networking</span>
-          </div>
-          <div class="kv">
-            <strong>Dates</strong>
-            <span>Sep 2023 – Apr 2025</span>
-          </div>
-          <div class="kv">
-            <strong>Focus</strong>
-            <span>TCP/IP, DNS, DHCP, Windows Server/AD basics, Wireless, Security fundamentals</span>
+        <div class="card">
+          <h3 class="card__title">Loyalist College</h3>
+          <p class="muted">Postgraduate Degree — Wireless Information Networking (Sep 2023 – Apr 2025)</p>
+          <div class="tags">
+            <span class="tag">TCP/IP</span><span class="tag">DNS</span><span class="tag">DHCP</span>
+            <span class="tag">Windows Server/AD basics</span><span class="tag">Security fundamentals</span>
           </div>
         </div>
 
-        <div class="card kvs">
-          <div class="kv">
-            <strong>Dr. A.P.J. Abdul Kalam University, Indore</strong>
-            <span>B.E. — Computer Science</span>
-          </div>
-          <div class="kv">
-            <strong>Dates</strong>
-            <span>Jul 2020 – Jun 2022</span>
-          </div>
-          <div class="kv">
-            <strong>Prior</strong>
-            <span>Diploma — Computer Science & Engineering (Jul 2016 – Jun 2019)</span>
-          </div>
+        <div class="card">
+          <h3 class="card__title">Dr. A.P.J. Abdul Kalam University, Indore</h3>
+          <p class="muted">B.E. — Computer Science (Jul 2020 – Jun 2022)</p>
+          <p class="muted" style="margin-top:8px;">Diploma — Computer Science & Engineering (Jul 2016 – Jun 2019)</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Certifications -->
-  <section id="certs">
-    <div class="wrap">
-      <div class="sectionTitle">
+    <!-- Certs -->
+    <section class="section reveal" id="certs">
+      <div class="section__head">
         <h2>Certifications</h2>
         <p>Credentials & training</p>
       </div>
 
-      <div class="grid2">
-        <div class="card">
-          <h3 style="margin:0 0 8px; font-size:16px;">CompTIA A+</h3>
-          <p style="margin:0; color:var(--muted);">Issued Jan 2026 • Expires Jan 2029</p>
+      <div class="certGrid">
+        <div class="card cert">
+          <div class="cert__top">
+            <h3>CompTIA A+</h3>
+            <span class="cert__pill">Active</span>
+          </div>
+          <p class="muted">Issued Jan 2026 • Expires Jan 2029</p>
         </div>
 
-        <div class="card">
-          <h3 style="margin:0 0 8px; font-size:16px;">Standard First Aid & CPR/AED Level C</h3>
-          <p style="margin:0; color:var(--muted);">Canadian Red Cross • Issued Sep 2023 • Expires Sep 2026</p>
+        <div class="card cert">
+          <div class="cert__top">
+            <h3>First Aid & CPR/AED Level C</h3>
+            <span class="cert__pill">Valid</span>
+          </div>
+          <p class="muted">Canadian Red Cross • Expires Sep 2026</p>
         </div>
 
-        <div class="card">
-          <h3 style="margin:0 0 8px; font-size:16px;">Ontario Security Guard (License)</h3>
-          <p style="margin:0; color:var(--muted);">Issued Oct 2023 • Expires Mar 2027</p>
-        </div>
-
-        <div class="card">
-          <h3 style="margin:0 0 8px; font-size:16px;">Currently Building</h3>
-          <p style="margin:0; color:var(--muted);">More labs + projects coming (ticketing, AD, Windows admin, networking)</p>
+        <div class="card cert">
+          <div class="cert__top">
+            <h3>Ontario Security Guard (License)</h3>
+            <span class="cert__pill">Valid</span>
+          </div>
+          <p class="muted">Expires Mar 2027</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <div class="wrap">
-      <div class="sectionTitle">
+    <!-- Contact -->
+    <section class="section reveal" id="contact">
+      <div class="section__head">
         <h2>Contact</h2>
         <p>Let’s connect</p>
       </div>
 
-      <div class="card">
-        <p style="margin:0 0 8px;"><strong>Email:</strong> <a href="mailto:fenil.surani.it@gmail.com">fenil.surani.it@gmail.com</a></p>
-        <p style="margin:0 0 8px;"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/fenilsurani/" target="_blank" rel="noreferrer">linkedin.com/in/fenilsurani</a></p>
-        <p style="margin:0;"><strong>GitHub:</strong> <a href="https://github.com/FenilSurani7478" target="_blank" rel="noreferrer">github.com/FenilSurani7478</a></p>
+      <div class="grid2">
+        <div class="card">
+          <h3 class="card__title">Reach me</h3>
+          <div class="contactList">
+            <a href="mailto:fenil.surani.it@gmail.com">fenil.surani.it@gmail.com</a>
+            <a href="https://www.linkedin.com/in/fenilsurani/" target="_blank" rel="noreferrer">linkedin.com/in/fenilsurani</a>
+            <a href="https://github.com/FenilSurani7478" target="_blank" rel="noreferrer">github.com/FenilSurani7478</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="card__title">Quick note</h3>
+          <p class="muted">
+            I’m open to entry-level Help Desk / IT Support roles (on-site/hybrid) across Toronto/GTA.
+            Happy to share screenshots, documentation, and walkthroughs of my labs.
+          </p>
+          <a class="btn btn--primary" href="mailto:fenil.surani.it@gmail.com">Email Me</a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <div class="wrap">
-      © <span id="y"></span> Fenil Surani • Built with GitHub Pages
-    </div>
-  </footer>
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="muted">© <span id="year"></span> Fenil Surani • Built on GitHub Pages</div>
+        <a class="toTop" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script src="js/app.js"></script>
 </body>
 </html>
