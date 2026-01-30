@@ -2,331 +2,352 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Fenil Surani | IT Support Portfolio</title>
-  <meta name="description" content="Entry-level Help Desk / IT Support portfolio. Active Directory, GPO, Windows Server, Spiceworks ticketing, troubleshooting, documentation." />
-
-  <meta property="og:title" content="Fenil Surani | IT Support Portfolio" />
-  <meta property="og:description" content="Help Desk / IT Support • AD/GPO • Windows Server • Ticketing (Spiceworks) • Toronto (GTA)" />
-  <!-- Optional social preview image:
-  <meta property="og:image" content="https://fenilsurani7478.github.io/assets/img/og.png" />
-  -->
-
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fenil Surani</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div class="bg-glow" aria-hidden="true"></div>
-
   <!-- Header -->
-  <header class="header" id="top">
-    <div class="container header__inner">
-      <a class="brand" href="#home" aria-label="Go to Home">
-        <span class="brand__dot"></span>
-        <span class="brand__text">Fenil Surani</span>
-      </a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Go to top">Fenil Surani</a>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#home">Home</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
+        <a href="#ticketing">Ticketing</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#experience">Experience</a>
+        <a href="#operations">Operations</a>
         <a href="#education">Education</a>
-        <a href="#certs">Certs</a>
-        <a href="#contact">Contact</a>
+        <a href="#connect">Connect</a>
       </nav>
-
-      <div class="header__actions">
-        <a class="btn btn--ghost" href="#contact">Contact</a>
-        <button class="menuBtn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile nav -->
-    <div class="mobileNav" id="mobileNav">
-      <div class="container mobileNav__inner">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#certs">Certs</a>
-        <a href="#contact">Contact</a>
-      </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <main class="container">
-    <section class="hero" id="home">
-      <div class="hero__left">
-        <div class="chip">CompTIA A+ • Toronto (GTA)</div>
-        <h1 class="hero__title">Entry-Level Help Desk / IT Support</h1>
-        <p class="hero__subtitle">
-          Hands-on home labs in <strong>Active Directory</strong>, <strong>GPO</strong>, <strong>Windows Server</strong>, and
-          <strong>ticketing workflows</strong>. Strong troubleshooting + documentation.
-        </p>
-
-        <div class="pillRow" aria-label="Key skills">
-          <span class="pill">Help Desk</span>
-          <span class="pill">Troubleshooting</span>
-          <span class="pill">Active Directory</span>
-          <span class="pill">GPO</span>
-          <span class="pill">Windows Server</span>
-          <span class="pill">Ticketing (Spiceworks)</span>
-        </div>
-
-        <div class="hero__cta">
-          <a class="btn btn--primary" href="#projects">View Projects</a>
-          <a class="btn btn--ghost" href="https://www.linkedin.com/in/fenilsurani/" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a class="btn btn--ghost" href="mailto:fenil.surani.it@gmail.com">Email</a>
-        </div>
-      </div>
-
-      <aside class="hero__card card reveal">
-        <div class="profile">
-          <img class="avatar" src="assets/img/profile.jpg" alt="Fenil Surani profile photo" />
-          <div>
-            <div class="profile__name">Fenil Surani</div>
-            <div class="profile__meta">Help Desk / IT Support (Entry-Level)</div>
-            <div class="profile__meta">Scarborough • Toronto (GTA)</div>
-          </div>
-        </div>
-
-        <div class="mini">
-          <div class="mini__row">
-            <span class="mini__label">Focus</span>
-            <span class="mini__value">AD + GPO • Ticket lifecycle • KB docs</span>
-          </div>
-          <div class="mini__row">
-            <span class="mini__label">Strengths</span>
-            <span class="mini__value">Customer support • Clear notes • Calm triage</span>
-          </div>
-        </div>
-
-        <div class="quickLinks">
-          <a class="quickLinks__item" href="https://github.com/FenilSurani7478" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="quickLinks__item" href="#certs">Certs</a>
-          <a class="quickLinks__item" href="#contact">Contact</a>
-        </div>
-      </aside>
-    </section>
-
-    <!-- About -->
-    <section class="section reveal" id="about">
-      <div class="section__head">
-        <h2>About</h2>
-        <p>How I work on support issues</p>
-      </div>
-
-      <div class="grid2">
-        <div class="card">
-          <h3 class="card__title">Support mindset</h3>
-          <p class="muted">
-            I enjoy helping end-users get back to work quickly. I follow a structured approach:
-            gather context → isolate the cause → implement a fix → verify → document.
+  <main id="top">
+    <!-- HERO -->
+    <section class="section hero" aria-label="Hero">
+      <div class="wrap grid-2 hero-grid">
+        <div class="hero-copy">
+          <h1>Fenil Surani</h1>
+          <p class="subhead">
+            Help Desk / IT Support Technician | Active Directory, GPO, Windows Server | M365 | Ticketing (Spiceworks) | Toronto (GTA)
           </p>
-          <ul class="list">
-            <li>Clear communication and expectations</li>
-            <li>Strong ticket notes + repeatable KB articles</li>
-            <li>Prioritization based on impact and urgency</li>
-          </ul>
+
+          <div class="btn-row">
+            <a class="btn primary" href="mailto:fenil.surani.it@gmail.com">Contact Me</a>
+            <a class="btn" href="https://linkedin.com/in/fenilsurani" target="_blank" rel="noreferrer">LinkedIn Profile</a>
+          </div>
         </div>
 
-        <div class="card">
-          <h3 class="card__title">What I’m targeting</h3>
-          <p class="muted">
-            Entry-level Help Desk / IT Support roles (on-site/hybrid in Toronto/GTA). Ready to contribute
-            immediately and grow into Tier 2 / junior sysadmin responsibilities.
+        <div class="hero-media">
+          <img src="assets/hero.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap grid-2">
+        <div>
+          <h2>About Me</h2>
+          <p>
+            I'm a recent graduate based in the Toronto (GTA) area pursuing entry-level Help Desk / IT Support roles. I enjoy troubleshooting end-user issues, documenting clear fixes, and keeping systems running smoothly. My approach combines technical expertise with strong customer communication skills, ensuring users feel supported while their problems get resolved efficiently.
           </p>
-          <div class="tags">
-            <span class="tag">Windows support</span>
-            <span class="tag">AD user/OUs</span>
-            <span class="tag">GPO basics</span>
-            <span class="tag">Ticketing</span>
-            <span class="tag">Documentation</span>
+          <p>
+            My hands-on experience through extensive home lab projects has given me practical knowledge in Active Directory, Group Policy management, ticketing systems, and structured troubleshooting methodologies. I've built real-world scenarios to practice the full lifecycle of IT support, from initial ticket intake through resolution and documentation.
+          </p>
+          <p>
+            I bring strengths in customer communication, structured troubleshooting, comprehensive documentation, and prioritizing issues based on impact and urgency. My certifications include CompTIA A+, CPR/First Aid, and Ontario Security Guard credentials. I'm open to on-site or hybrid roles across Toronto and the GTA, ready to contribute immediately while continuing to grow into Tier 2 support positions.
+          </p>
+        </div>
+
+        <div class="media-card">
+          <img src="assets/about.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="wrap grid-2 skills-grid">
+        <div class="media-card">
+          <img src="assets/skills.jpg" alt="" />
+        </div>
+
+        <div>
+          <h2>Core Technical Skills</h2>
+
+          <div class="stack">
+            <div class="skill-card">
+              <h3>Active Directory &amp; GPO</h3>
+              <p>User/OU management, Group Policy configuration, logon scripts, and centralized logging for enterprise environments</p>
+            </div>
+
+            <div class="skill-card">
+              <h3>Windows Server &amp; M365</h3>
+              <p>Windows Server administration, Microsoft 365 suite, and cloud-based productivity tools</p>
+            </div>
+
+            <div class="skill-card">
+              <h3>Ticketing Systems</h3>
+              <p>Spiceworks Help Desk configuration, ticket lifecycle management, SLA implementation, and KB article creation</p>
+            </div>
+
+            <div class="skill-card">
+              <h3>Help Desk Support</h3>
+              <p>End-user troubleshooting, structured problem-solving, documentation, and customer communication</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects -->
-    <section class="section reveal" id="projects">
-      <div class="section__head">
-        <h2>Projects</h2>
-        <p>Featured labs with GitHub documentation</p>
-      </div>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Home Lab Projects</h2>
 
-      <div class="projectGrid">
-        <!-- Spiceworks -->
-        <article class="card project">
-          <img class="project__thumb" src="assets/img/thumb-spiceworks.png" alt="Spiceworks Help Desk Lab thumbnail" />
-          <div class="project__body">
-            <div class="project__top">
-              <h3>Spiceworks Help Desk Lab</h3>
-              <span class="badge">Ticketing • SLA • KB</span>
-            </div>
-
-            <ul class="list tight">
-              <li>Configured users/roles, categories, SLAs, email alerts</li>
-              <li>Practiced intake → triage → resolution → closure</li>
-              <li>Created KB articles for repeat fixes</li>
-            </ul>
-
-            <div class="tags">
-              <span class="tag">Incident workflow</span>
-              <span class="tag">Ticket notes</span>
-              <span class="tag">Documentation</span>
-            </div>
-
-            <div class="project__actions">
-              <a class="btn btn--primary" href="https://github.com/FenilSurani7478/spiceworks-helpdesk-lab" target="_blank" rel="noreferrer">View GitHub</a>
-              <button class="btn btn--ghost caseBtn" data-case="case-spiceworks">Case Study</button>
-            </div>
-
-            <div class="case" id="case-spiceworks" hidden>
-              <div class="case__grid">
-                <div><h4>Goal</h4><p>Practice real service desk workflows and SLA-based prioritization.</p></div>
-                <div><h4>What I built</h4><p>Configured categories, SLAs, alerts, users/roles; ran sample incidents end-to-end.</p></div>
-                <div><h4>What I learned</h4><p>Clear ticket notes, triage decisions, and KB documentation reduce repeat issues.</p></div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- AD Lab -->
-        <article class="card project">
-          <img class="project__thumb" src="assets/img/thumb-ad-homelab.png" alt="Active Directory Home Lab thumbnail" />
-          <div class="project__body">
-            <div class="project__top">
-              <h3>Active Directory Home Lab</h3>
-              <span class="badge">AD • GPO • Windows Server</span>
-            </div>
-
-            <ul class="list tight">
-              <li>Built Windows Server DC + Windows 11 client (VMware)</li>
-              <li>Created users/OUs and applied Group Policy (GPO)</li>
-              <li>Deployed logon script + centralized logging</li>
-            </ul>
-
-            <div class="tags">
-              <span class="tag">AD DS</span>
-              <span class="tag">GPO</span>
-              <span class="tag">Troubleshooting</span>
-            </div>
-
-            <div class="project__actions">
-              <a class="btn btn--primary" href="https://github.com/FenilSurani7478/ad-homelab-gpo-logon-script" target="_blank" rel="noreferrer">View GitHub</a>
-              <button class="btn btn--ghost caseBtn" data-case="case-ad">Case Study</button>
-            </div>
-
-            <div class="case" id="case-ad" hidden>
-              <div class="case__grid">
-                <div><h4>Goal</h4><p>Build realistic AD/GPO practice for account and policy troubleshooting.</p></div>
-                <div><h4>What I built</h4><p>OUs/users + GPO settings; logon script; centralized logging for validation.</p></div>
-                <div><h4>What I learned</h4><p>Policy application testing (gpupdate), repeatable setup, and clear documentation.</p></div>
-              </div>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section class="section reveal" id="education">
-      <div class="section__head">
-        <h2>Education</h2>
-        <p>Programs and focus areas</p>
-      </div>
-
-      <div class="grid2">
-        <div class="card">
-          <h3 class="card__title">Loyalist College</h3>
-          <p class="muted">Postgraduate Degree — Wireless Information Networking (Sep 2023 – Apr 2025)</p>
-          <div class="tags">
-            <span class="tag">TCP/IP</span><span class="tag">DNS</span><span class="tag">DHCP</span>
-            <span class="tag">Windows Server/AD basics</span><span class="tag">Security fundamentals</span>
-          </div>
+        <div class="meta-line">
+          <span class="pill">JANUARY 2026 - PRESENT</span>
         </div>
 
-        <div class="card">
-          <h3 class="card__title">Dr. A.P.J. Abdul Kalam University, Indore</h3>
-          <p class="muted">B.E. — Computer Science (Jul 2020 – Jun 2022)</p>
-          <p class="muted" style="margin-top:8px;">Diploma — Computer Science & Engineering (Jul 2016 – Jun 2019)</p>
+        <h3 class="project-title">IT Support Projects — Active Directory + Ticketing (Spiceworks)</h3>
+
+        <div class="grid-2 projects-grid">
+          <div class="arrow-list" aria-label="Project tags">
+            <div class="arrow">Lab Setup</div>
+            <div class="arrow">AD Configuration</div>
+            <div class="arrow">GPO Deployment</div>
+            <div class="arrow">Ticketing</div>
+          </div>
+
+          <div class="project-copy">
+            <p>
+              I've built a comprehensive self-directed home lab focused on real-world help desk workflows and enterprise IT support scenarios. This hands-on environment allows me to practice and refine the skills that matter most in professional IT support roles.
+            </p>
+            <p>
+              The lab infrastructure includes a Windows Server domain controller (DC01) and Windows 11 client machines running in VMware, creating a realistic enterprise environment. I've implemented Active Directory with organizational units, user accounts, and security groups to mirror corporate structures.
+            </p>
+            <p>
+              Beyond basic setup, I've configured Group Policy Objects to apply standard settings, automate workstation configurations, and deployed custom logon scripts with centralized logging capabilities. This supports both troubleshooting efforts and compliance auditing requirements.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Certs -->
-    <section class="section reveal" id="certs">
-      <div class="section__head">
-        <h2>Certifications</h2>
-        <p>Credentials & training</p>
-      </div>
+    <!-- TICKETING -->
+    <section id="ticketing" class="section">
+      <div class="wrap grid-2 ticketing-grid">
+        <div class="ticketing-media">
+          <img src="assets/ticketing.jpg" alt="" />
+        </div>
 
-      <div class="certGrid">
-        <div class="card cert">
-          <div class="cert__top">
+        <div>
+          <h2>Ticketing System Expertise</h2>
+          <h3 class="ticketing-subtitle">Spiceworks Help Desk Implementation</h3>
+
+          <p>
+            I installed and fully configured Spiceworks Help Desk to simulate a professional IT support environment. This included creating user accounts with appropriate role-based permissions, establishing ticket categories for different issue types, and implementing Service Level Agreements (SLAs) to ensure timely response and resolution.
+          </p>
+          <p>
+            The system includes automated email alerts to keep stakeholders informed throughout the ticket lifecycle. I've practiced the complete workflow from initial intake and triage through investigation, resolution, and final closure. For recurring issues, I've developed knowledge base articles that improve consistency and reduce resolution time.
+          </p>
+          <p>
+            This hands-on experience has taught me how to prioritize tickets based on business impact and urgency, document solutions clearly for future reference, and maintain professional communication with end users throughout the support process.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="wrap">
+        <h2>Professional Certifications</h2>
+
+        <div class="cert-grid">
+          <div class="cert-card">
+            <div class="cert-icon">
+              <img src="assets/certifications.jpg" alt="" />
+            </div>
             <h3>CompTIA A+</h3>
-            <span class="cert__pill">Active</span>
+            <p>Industry-recognized certification covering hardware, software, networking, troubleshooting, and customer service fundamentals</p>
           </div>
-          <p class="muted">Issued Jan 2026 • Expires Jan 2029</p>
-        </div>
 
-        <div class="card cert">
-          <div class="cert__top">
-            <h3>First Aid & CPR/AED Level C</h3>
-            <span class="cert__pill">Valid</span>
+          <div class="cert-card">
+            <div class="cert-icon">
+              <img src="assets/certifications.jpg" alt="" />
+            </div>
+            <h3>Standard First Aid &amp; CPR/AED Level C</h3>
+            <p>Emergency response training for workplace safety and health emergencies</p>
           </div>
-          <p class="muted">Canadian Red Cross • Expires Sep 2026</p>
-        </div>
 
-        <div class="card cert">
-          <div class="cert__top">
-            <h3>Ontario Security Guard (License)</h3>
-            <span class="cert__pill">Valid</span>
+          <div class="cert-card">
+            <div class="cert-icon">
+              <img src="assets/certifications.jpg" alt="" />
+            </div>
+            <h3>Ontario Security Guard</h3>
+            <p>Licensed security professional with training in access control, incident response, and safety protocols</p>
           </div>
-          <p class="muted">Expires Mar 2027</p>
         </div>
       </div>
     </section>
 
-    <!-- Contact -->
-    <section class="section reveal" id="contact">
-      <div class="section__head">
-        <h2>Contact</h2>
-        <p>Let’s connect</p>
-      </div>
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="wrap">
+        <h2>Security Professional Experience</h2>
 
-      <div class="grid2">
-        <div class="card">
-          <h3 class="card__title">Reach me</h3>
-          <div class="contactList">
-            <a href="mailto:fenil.surani.it@gmail.com">fenil.surani.it@gmail.com</a>
-            <a href="https://www.linkedin.com/in/fenilsurani/" target="_blank" rel="noreferrer">linkedin.com/in/fenilsurani</a>
-            <a href="https://github.com/FenilSurani7478" target="_blank" rel="noreferrer">github.com/FenilSurani7478</a>
+        <div class="exp-card">
+          <div class="exp-top">
+            <div class="exp-badges">
+              <span class="pill">OBN SECURITY &amp; INVESTIGATIVE CONSULTANTS</span>
+              <span class="pill">FIRST SECURITY PROTECTION SERVICES</span>
+            </div>
+            <div class="exp-time">1 year 9 months combined security experience</div>
+          </div>
+
+          <div class="exp-body">
+            <div class="exp-left">
+              <h3>Core Competencies</h3>
+              <ul>
+                <li>Access control and surveillance monitoring</li>
+                <li>Incident response and reporting</li>
+                <li>Patrolling and risk prevention</li>
+                <li>Emergency handling and conflict resolution</li>
+                <li>Customer service and communication</li>
+              </ul>
+            </div>
+
+            <div class="exp-right">
+              <p>
+                Security has always meant more to me than just protecting property — it's about creating a safe, welcoming environment where people feel valued and supported. With hands-on experience in security operations and a strong background in customer service, I've developed a unique ability to balance vigilance with approachability.
+              </p>
+              <p>
+                My customer service background taught me patience, empathy, and clear communication — qualities that make all the difference when working with residents, employees, or visitors. In security, I don't just focus on protocols; I focus on people.
+              </p>
+              <p>
+                These transferable skills directly apply to IT support roles, where creating a positive user experience while maintaining security and following proper procedures is essential. I'm committed to continuous growth, contributing to organizations where safety, professionalism, and service go hand in hand.
+              </p>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="card">
-          <h3 class="card__title">Quick note</h3>
-          <p class="muted">
-            I’m open to entry-level Help Desk / IT Support roles (on-site/hybrid) across Toronto/GTA.
-            Happy to share screenshots, documentation, and walkthroughs of my labs.
+    <!-- OPERATIONS -->
+    <section id="operations" class="section">
+      <div class="wrap">
+        <h2>Operations &amp; Management Background</h2>
+
+        <div class="ops-meta">
+          <span class="pill">MARUTI TEXTILES</span>
+          <span class="pill">JULY 2022 - AUGUST 2023</span>
+        </div>
+
+        <h3 class="ops-title">Factory Manager — Surat, Gujarat, India</h3>
+
+        <div class="ops-grid">
+          <div class="ops-card">
+            <h4>Inventory Management</h4>
+            <p>Managed raw material and finished goods inventory, ensuring accurate stock levels for production planning and minimizing waste</p>
+          </div>
+
+          <div class="ops-card">
+            <h4>Administrative Operations</h4>
+            <p>Prepared attendance reports and processed payroll, guaranteeing timely and precise calculations for all team members</p>
+          </div>
+
+          <div class="ops-card">
+            <h4>Logistics Coordination</h4>
+            <p>Coordinated dispatch and delivery preparations, verifying documentation and schedules to meet deadlines consistently</p>
+          </div>
+
+          <div class="ops-card">
+            <h4>Vendor Relations</h4>
+            <p>Collaborated with vendors to source machine parts and minimize downtime through effective follow-up and relationship management</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="wrap">
+        <h2>Education &amp; Academic Background</h2>
+
+        <div class="edu-timeline">
+          <div class="edu-row">
+            <div class="edu-num">1</div>
+            <div class="edu-content">
+              <h3>Postgraduate Degree — Wireless Information Networking</h3>
+              <p>Loyalist College | September 2023 - April 2025 | Toronto, Ontario, Canada</p>
+              <p>Advanced studies in wireless networking, information systems, and modern IT infrastructure</p>
+            </div>
+          </div>
+
+          <div class="edu-row">
+            <div class="edu-num">2</div>
+            <div class="edu-content">
+              <h3>Bachelor of Engineering — Computer Science</h3>
+              <p>Dr. A.P.J. Abdul Kalam University Indore | July 2020 - June 2022 | Indore, India</p>
+              <p>Comprehensive computer science education covering software development, systems architecture, and networking fundamentals</p>
+            </div>
+          </div>
+
+          <div class="edu-row">
+            <div class="edu-num">3</div>
+            <div class="edu-content">
+              <h3>Diploma — Computer Science and Engineering</h3>
+              <p>Dr. A.P.J. Abdul Kalam University Indore | July 2016 - June 2019 | Indore, India</p>
+              <p>Foundation in computer science principles, programming, and engineering practices</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONNECT -->
+    <section id="connect" class="section connect">
+      <div class="wrap grid-2 connect-grid">
+        <div class="connect-media">
+          <img src="assets/connect.jpg" alt="" />
+        </div>
+
+        <div class="connect-copy">
+          <h2>Let's Connect</h2>
+          <h3>Ready to Contribute</h3>
+
+          <p>
+            I'm actively seeking entry-level Help Desk and IT Support positions across Toronto and the Greater Toronto Area. I'm open to on-site or hybrid work arrangements and ready to contribute immediately to your team's success.
           </p>
-          <a class="btn btn--primary" href="mailto:fenil.surani.it@gmail.com">Email Me</a>
+          <p>
+            My combination of technical skills, hands-on lab experience, customer service background, and professional certifications makes me well-prepared to handle the challenges of modern IT support. I'm committed to continuous learning and growth, with aspirations to advance into Tier 2 support roles.
+          </p>
+
+          <div class="btn-row">
+            <a class="btn primary" href="mailto:fenil.surani.it@gmail.com">Get In Touch</a>
+            <a class="btn" href="https://fenilsurani7478.github.io" target="_blank" rel="noreferrer">View Portfolio</a>
+          </div>
+
+          <div class="connect-links">
+            <a href="mailto:fenil.surani.it@gmail.com">fenil.surani.it@gmail.com</a>
+            <a href="https://linkedin.com/in/fenilsurani" target="_blank" rel="noreferrer">linkedin.com/in/fenilsurani</a>
+            <a href="https://fenilsurani7478.github.io" target="_blank" rel="noreferrer">fenilsurani7478.github.io</a>
+          </div>
         </div>
       </div>
     </section>
-
-    <footer class="footer">
-      <div class="footer__inner">
-        <div class="muted">© <span id="year"></span> Fenil Surani • Built on GitHub Pages</div>
-        <a class="toTop" href="#top">Back to top ↑</a>
-      </div>
-    </footer>
   </main>
 
-  <script src="js/app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
